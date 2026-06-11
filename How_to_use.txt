@@ -1,0 +1,20 @@
+توسعه دهنده:mmdamin
+گیت هاب تیم ما:https://github.com/mmdamin8089
+نحوه استفاده از سرویس کوتاه کننده لینک:
+ابتدا یک دیتابیس در سرور خود بسازید.
+سپس فایل sh20.sql را ایمپورت یا وارد کنید در دیتابیس خود
+حال به فایل index.php مراجعه کنید و اطلاعات دیتابیس و همچنین دامنه وبسایت خود را در متغیر domin وارد کنید.
+حال سرویس شما آماده استفاده است
+با متد post ،درخواست خود را به این شکل بفرستید:
+data = {"url":"آدرسی که میخواهید کوتاه شود"}
+
+-----English-----
+Developer: mmdamin
+Our Team GitHub: https://github.com/mmdamin8089
+How to use the link shortening service:
+First, create a database on your server.
+Then import or import the sh20.sql file into your database
+Now go to the index.php file and enter the database information as well as your website domain in the domin variable.
+Now your service is ready to use
+With the post method, send your request like this:
+data = {"url":"The address you want to shorten."}

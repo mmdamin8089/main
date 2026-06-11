@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# اگر فایل واقعی نیست، درخواست را به index.php پاس بده
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# پارامتر بعد از اسلش را به عنوان code به php بده
+RewriteRule ^([a-zA-Z0-9]+)$ index.php?code=$1 [L]
